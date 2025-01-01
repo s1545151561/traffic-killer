@@ -138,10 +138,47 @@
                                 <div class="form-control-wrap">
                                     <select id='select' onchange="document.getElementById('link').value=this.options[this.selectedIndex].value;setCookie('select',this.selectedIndex,365);" type="text" class="form-control">
                                         <option value="" id="diy">自定义</option>
-					<option selected="selected" value="FlowLossApi://listen.10155.com">联通节点-联通电视-动态定向</option> 
-					<option selected="selected" value="https://m1.ad.10010.com/small_video/uploadImg/1669798519261.png">联通节点-联通静态</option> 
-					<option selected="selected" value="https://www.cucloud.cn/templets/1/default/images/nodes-overview-bg.png">联通节点-联通云</option> 
-					<option selected="selected" value="https://yun.mcloud.139.com/hongseyunpan/2.43G.zip">移动节点-中国移动云盘[高速]</option>   
+					<optgroup label="联通节点">
+					<option value="FlowLossApi://listen.10155.com">联通节点 - 联通电视[动态定向]</option>
+					<option value="https://m1.ad.10010.com/small_video/uploadImg/1669798519261.png">联通节点 - 联通静态</option>
+					<option value="https://www.cucloud.cn/templets/1/default/images/nodes-overview-bg.png">联通节点 - 联通云</option>
+					</optgroup>    
+
+                                        <optgroup label="移动节点">
+					<option value="https://gcache.migu.cn/prod/upload/game_resource/channel_for_homepage_game2/202408/2909/59/20240829095855985_mgwebp1.jpg">移动节点 - 咪咕快游[高速]</option>
+                                        <option value="https://h5.cp.139.com/phone/static/images/assets/pages/main/new_main_Intro.png">移动节点 - 移动云手机</option>
+                                        <option value="https://yun.mcloud.139.com/hongseyunpan/2.43G.zip">移动节点 - 中国移动云盘[高速]</option>
+                                        <option value="https://img.cmvideo.cn/publish/noms/2023/12/06/1O4SHFIFR36BD.gif">移动节点 - 咪咕视频</option>
+                                        <option value="https://img.mcloud.139.com/material_prod/material_media/20221128/1669626861087.png">移动节点 - 和彩云[高速]</option>
+                                        <option value="https://wsdkdl.migu.cn/common/mgmusic/migu_https.js">移动节点 - 咪咕音乐</option>
+                                        <option value="https://img.aikan.miguvideo.com/publish/noms/2024/04/22/1O5MNLF3AN2JL.gif">移动节点 - 咪咕爱看[定向]</option>                                                                                
+                                        </optgroup>
+
+					<optgroup label="电信节点">
+					<option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/8ee30576c30d40518c4dae03f7eacf3c.mp4">电信节点 - 天翼云</option>
+					<option value="https://desk.ctyun.cn:8999/desktop-prod/software/windows_tob_client/15/64/202030001/CtyunClouddeskUniversal_2.3.0_202030001_x86_20240327104015_Setup.exe">电信节点 - 天翼云桌面</option>
+					<option value="https://imback.zdxlz.com/im2/download/lzmx-windows-3.2.0_x64.exe">电信节点 - 量子密信(需装插件)</option>
+					<option value="https://static.e.189.cn/open/login/page/web/v5.0/static/js/captch.min.js?v1.1">电信节点 - 天翼云盘</option>
+					<option value="https://cloudmeeting.189.cn/static/js/chunk-vendors.624b9116.js">电信节点 - 天翼云会议</option>
+					</optgroup>
+
+					<optgroup label="全球节点">
+					<option value="https://speed.cloudflare.com/__down?bytes=25000000">全球节点 - Cloudflare Speed[Global]</option>
+					<option value="https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z">全球节点 - Cloudflare Workers</option>
+					<option value="https://cdn.akamai.steamstatic.com/steam/apps/1063730/extras/NW_Sword_Sorcery_2.gif">全球节点 - Steam Akamai</option>
+					<option value="https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/extras/NW_Sword_Sorcery_2.gif">全球节点 - Steam Cloudflare</option>
+					<option value="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW16Ptm">全球节点 - Microsoft Akamai</option>
+					<option value="https://sgp-ping.vultr.com/vultr.com.1000MB.bin">全球节点 - Vultr[SG]</option>
+					<option value="https://hkg.download.datapacket.com/100mb.bin">全球节点 - Datapacket[HK]</option>
+					<option value="https://tyo.download.datapacket.com/100mb.bin">全球节点 - Datapacket[JP]</option>
+					<option value="https://par.download.datapacket.com/100mb.bin">全球节点 - Datapacket[FRA]</option>
+					<option value="https://lax.download.datapacket.com/100mb.bin">全球节点 - Datapacket[LA]</option>
+					<option value="https://ash.download.datapacket.com/100mb.bin">全球节点 - Datapacket[Ashburn]</option>
+                                        <option value="https://cachefly.cachefly.net/100mb.test">Cachefly Test [Global]</option>
+                                        <option value="https://speed.cloudflare.com/__down?bytes=1073741824">Cloudflare Speed [Global]</option>
+					</optgroup>
+
+				        <optgroup label="其他链接"> 
                                         <option selected="selected" value="https://issuecdn.baidupcs.com/issue/netdisk/apk/BaiduNetdiskSetup_wap_share.apk">百度CDN [高速]</option>
                                         <option value="https://kodo-toolbox.qiniu.com/kodo-browser-Linux-x64-v1.0.17.zip">七牛云CDN [高速]</option>
                                         <option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里CDN</option>
@@ -151,12 +188,8 @@
                                         <option value="https://pic-bucket.ws.126.net/photo/0003/2022-04-24/H5N2082C00AJ0003NOS.jpg">网易</option>
                                         <option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米</option>
                                         <option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">Vivo</option>
-                                        <option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7220/MobileMusic7220_0140068.apk">咪咕音乐</option>
-                                        <option value="https://img.cmvideo.cn/publish/noms/2022/10/14/1O3VIGPVP6HTS.jpg">咪咕视频</option>
-                                        <option value="https://img.mcloud.139.com/material_prod/material_media/20221128/1669626861087.png">和彩云</option>
-                                        <option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/07da9eb52ad948c7b58b760003c0006b.mp4">天翼云</option>
-                                        <option value="https://cachefly.cachefly.net/100mb.test">Cachefly Test [Global]</option>
-                                        <option value="https://speed.cloudflare.com/__down?bytes=1073741824">Cloudflare Speed [Global]</option>
+					</optgroup>
+					    
                                     </select>
                                     <input value="" oninput="document.getElementById('select').selectedIndex=0;document.getElementById('diy').value=this.value;setCookie('diy',this.value,365);setCookie('select',0,365);" type="text" id="link" placeholder="请输入下载链接" autocomplete="off" class="form-control">
                                 </div>
